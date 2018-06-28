@@ -1,8 +1,40 @@
 ---
 title: test
-heading: Belkirk College
+heading: Blood & Ethos
 sub_heading: Engineering and Health Sciences
 layout: home
 date: 2018-06-28 02:13:35 +0000
+banner_image: ''
+hero_button:
+  text: ''
+  href: ''
+textline: |-
+  Normally, JavaScript apps aren’t pumping so much through the connections, but since the app is running it’s own multi-tab browser, analyzing/proxying all http/https/ws/wss connections, blocking ads, sharing the main thread with several other embedded electron apps  - we have a uniquely precious need for non-blocking I/O, unblocking the main electron thread and maximal concurrency.
+
+  I’m loving Go, it’s a Google created language for exactly our use case.  And, as the creator of Node.js said,  “_I think Node is not the best system to build a massive server web. I would use Go for that. And honestly, that’s the reason why I left Node. It was the realization that: oh, actually, this is not the best server-side system ever._, and “”_If you’re building a server, I can’t imagine using anything other than Go_” — [https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/](https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/ "https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/")
+
+  Go modules are compiled to self-contained binaries that work without external dependencies on all major OS’s!  This docker-like containerization process can also be used to our advantage in surprising ways:
+
+   - protect our JavaScript source code, a notoriously difficult task for electron apps and JS in general
+
+   - embed & utilize non-JS things like WordPress (think elegant themes) as a service
+
+   - run proven & proper server infrastructure locally on the app while maintaining minimal footprint
+
+   - like node.js, when & if needed, the app’s Go modules could be deployed as cloud services
+
+  The Go frameworks I’m using make all this surprisingly easy, in particular:
+services:
+- heading: Service A
+  icon: ''
+  description: 'Ryan Dahl is a Software Engineer working at Google Brain. He is the
+    creator of Node.js, JavaScript runtime built on Chrome’s V8 JavaScript engine.
+    Currently, he is working on deep learBrowserifyning research projects. His focus
+    is mostly on image-to-image transformations like colorization and super-resolution.
+    He has contributed to several open source projects including HTTP Parser, libuv.
+    … Continue reading Episode 8: Interview with Ryan Dahl, Creator of Node.js'
+show_news: false
+partners: []
+show_staff: false
 published: false
 ---
